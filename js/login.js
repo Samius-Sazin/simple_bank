@@ -9,6 +9,7 @@ document.getElementById('submit_button').addEventListener('click',  function(){
         document.getElementById('user_name').value = '';
         document.getElementById('pass_word').value = '';
 
+        // jumping to secondPage html file
         window.location.href = 'secondpage.html';
     }
     else{
