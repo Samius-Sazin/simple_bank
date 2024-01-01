@@ -21,7 +21,8 @@ document.getElementById('withdraw_button').addEventListener('click', function(){
     const get_withdraw_value = document.getElementById('withdraw_input_area').value;
 
     // set withdraw value to withdraw area
-    document.getElementById('previous_withdraw').innerText = '$' + get_withdraw_value;
+    const new_previous_withdraw = document.getElementById('previous_withdraw');
+    new_previous_withdraw.innerText = '$' + (parseInt(new_previous_withdraw.innerText.substring(1)) + parseInt(get_withdraw_value));
 
     //update balance area
     const new_balance = document.getElementById('previous_balance');
